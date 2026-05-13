@@ -1,3 +1,6 @@
 Create a merge commit: Unisce tutti i commit del feature branch nel branch principale tramite un commit di merge. Mantiene l'intera cronologia.
 Squash and merge: Combina tutti i commit della PR in un unico commit. Ideale per ripulire la cronologia se ci sono stati molti commit intermedi di test per configurare la BOM.
 Rebase and merge: Applica i singoli commit della PR in cima al branch principale senza creare un commit di merge. Mantiene una cronologia lineare.
+
+
+Merge test

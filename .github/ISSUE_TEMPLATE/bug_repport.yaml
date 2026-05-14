@@ -1,0 +1,70 @@
+name: "Segnalazione Bug 🐛"
+description: "Crea una segnalazione per aiutarci a identificare e risolvere il problema."
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per aver speso del tempo a segnalare questo problema! Compila il modulo il più accuratamente possibile.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrizione del Bug
+      description: Fornisci una descrizione chiara e concisa del problema riscontrato.
+      placeholder: Cosa è successo?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passaggi per Riprodurre il Problema
+      description: Elenca i passaggi esatti necessari per attivare il bug.
+      placeholder: |
+        1. Vai su...
+        2. Clicca su...
+        3. Vedi l'errore...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: Comportamento Atteso vs Comportamento Effettivo
+      description: Cosa ti aspettavi che succedesse e cosa è successo invece?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Ambiente di Esecuzione
+      description: In quale ambiente si verifica il problema?
+      options:
+        - Produzione (Production)
+        - Staging / Testing
+        - Sviluppo Locale (Local Dev)
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Versione del Software
+      description: Indica la versione dell'applicazione (es. v1.2.3).
+      placeholder: vX.Y.Z
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Verifiche Preliminari
+      description: Conferma di aver effettuato i seguenti controlli prima di inviare la segnalazione.
+      options:
+        - label: Ho cercato tra le Issue esistenti e non ho trovato duplicati.
+          required: true
+        - label: Sto utilizzando l'ultima versione disponibile del software.
+          required: true

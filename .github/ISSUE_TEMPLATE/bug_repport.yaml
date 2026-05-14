@@ -1,59 +1,59 @@
-name: "Segnalazione Bug 🐛"
-description: "Crea una segnalazione per aiutarci a identificare e risolvere il problema."
+name: "Bug Report"
+description: "File a report to help us identify and fix the issue."
 title: "[Bug]: "
 labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Grazie per aver speso del tempo a segnalare questo problema! Compila il modulo il più accuratamente possibile.
+        Thank you for taking the time to report this issue! Please fill out this form as accurately as possible.
 
   - type: textarea
     id: description
     attributes:
-      label: Descrizione del Bug
-      description: Fornisci una descrizione chiara e concisa del problema riscontrato.
-      placeholder: Cosa è successo?
+      label: Bug Description
+      description: Provide a clear and concise description of what the problem is.
+      placeholder: What happened?
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: Passaggi per Riprodurre il Problema
-      description: Elenca i passaggi esatti necessari per attivare il bug.
+      label: Steps to Reproduce
+      description: List the exact steps needed to trigger the bug.
       placeholder: |
-        1. Vai su...
-        2. Clicca su...
-        3. Vedi l'errore...
+        1. Go to...
+        2. Click on...
+        3. See error...
     validations:
       required: true
 
   - type: textarea
     id: expected-actual
     attributes:
-      label: Comportamento Atteso vs Comportamento Effettivo
-      description: Cosa ti aspettavi che succedesse e cosa è successo invece?
+      label: Expected vs Actual Behavior
+      description: What did you expect to happen, and what happened instead?
     validations:
       required: false
 
   - type: dropdown
     id: environment
     attributes:
-      label: Ambiente di Esecuzione
-      description: In quale ambiente si verifica il problema?
+      label: Environment
+      description: In which environment does this issue occur?
       options:
-        - Produzione (Production)
+        - Production
         - Staging / Testing
-        - Sviluppo Locale (Local Dev)
+        - Local Development
     validations:
       required: true
 
   - type: input
     id: version
     attributes:
-      label: Versione del Software
-      description: Indica la versione dell'applicazione (es. v1.2.3).
+      label: Software Version
+      description: Indicate the application version (e.g., v1.2.3).
       placeholder: vX.Y.Z
     validations:
       required: false
@@ -61,10 +61,10 @@ body:
   - type: checkboxes
     id: checks
     attributes:
-      label: Verifiche Preliminari
-      description: Conferma di aver effettuato i seguenti controlli prima di inviare la segnalazione.
+      label: Preliminary Checks
+      description: Confirm you completed these steps before submitting the report.
       options:
-        - label: Ho cercato tra le Issue esistenti e non ho trovato duplicati.
+        - label: I have searched existing issues and found no duplicates.
           required: true
-        - label: Sto utilizzando l'ultima versione disponibile del software.
+        - label: I am using the latest available version of the software.
           required: true

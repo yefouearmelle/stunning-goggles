@@ -1,8 +1,8 @@
 ## Description
-<!-- Provide a clear summary of the changes introduced by this PR. -->
+<!-- Provide a clear summary of the changes introduced by this PR. 
 
 ## Related Issues
-<!-- Link the tracking ticket or issue numbers here (e.g., Closes #123). -->
+<!-- Link the tracking ticket or issue numbers here (e.g., Closes #123).
 
 ## Type of Change
 - [ ] 🐛 Bug fix (non-breaking change fixing an issue)
